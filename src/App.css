@@ -1,0 +1,155 @@
+body {
+  background: #f7f8fa;
+  font-family: 'Inter', Arial, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container {
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 2rem 2.5rem 2.5rem 2.5rem;
+}
+
+h1 {
+  text-align: center;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"] {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f9fafb;
+  transition: border 0.2s;
+}
+
+form input:focus {
+  border: 1.5px solid #3182ce;
+  outline: none;
+}
+
+form button {
+  background: #3182ce;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background: #2563eb;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+li {
+  background: #f9fafb;
+  border-radius: 8px;
+  margin-bottom: 1.2rem;
+  padding: 1rem 1rem 0.7rem 1rem;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  position: relative;
+}
+
+li strong {
+  color: #2b6cb0;
+}
+
+li button {
+  background: #e2e8f0;
+  color: #2d3748;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.7rem;
+  font-size: 0.95rem;
+  margin-left: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+li button:hover {
+  background: #cbd5e1;
+}
+
+li input[type="date"],
+li input[type="number"],
+li input[type="text"] {
+  margin-left: 8px;
+  padding: 0.3rem;
+  border-radius: 5px;
+  border: 1px solid #d1d5db;
+  background: #fff;
+}
+
+li input:focus {
+  border: 1.5px solid #3182ce;
+}
+
+li div {
+  margin-top: 6px;
+}
+
+li .remove-btn {
+  background: #f56565;
+  color: #fff;
+  margin-top: 10px;
+}
+
+li .remove-btn:hover {
+  background: #c53030;
+}
+
+.clear-btn {
+  background: #f56565;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.1rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.clear-btn:hover {
+  background: #c53030;
+}
+
+.empty-state {
+  color: #888;
+  margin: 2rem 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.tip {
+  margin-bottom: 16px;
+  color: #4a5568;
+  font-size: 0.97rem;
+  text-align: center;
+}
